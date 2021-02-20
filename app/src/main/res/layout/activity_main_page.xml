@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/links"
+    tools:context=".MainPage">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="start"
+        android:layout_marginBottom="20dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/sparks" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:gravity="center"
+        android:text="Made by Payel Paul"
+        android:textColor="@color/choose"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:onClick="fbclick"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/fb1" />
+
+        <Button
+            android:id="@+id/btnfb"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:onClick="fbclick"
+            android:background="@color/fbf"
+            android:layout_marginRight="20dp"
+            android:text="click here to proceed to fb Login" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:onClick="fbclick"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/link" />
+
+        <Button
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="linkclick"
+            android:background="@color/linked"
+
+            android:textStyle="bold"
+            android:text="click here to proceed to LinkedIn Login"/>
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
